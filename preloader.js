@@ -9,7 +9,7 @@ overlay.style.cssText = `
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(26, 31, 36, 1);
     z-index: 999;
 `;
 
@@ -38,7 +38,7 @@ function hideOverlay() {
         renderer: 'svg', // ou 'canvas' se preferir
         loop: true,
         autoplay: true,
-        path: 'https://jvsc99.github.io/preloaderJSLottie/JVGIsylS3F-3.json',
+        path: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/Animation%20-%201709845601995.json',
     });
 }
 
