@@ -38,7 +38,7 @@ function hideOverlay() {
         renderer: 'svg', // ou 'canvas' se preferir
         loop: true,
         autoplay: true,
-        path: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/Animation%20-%201709845601995.json',
+        path: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/astronaut.json',
     });
 }
 
