@@ -46,4 +46,4 @@ document.addEventListener('DOMContentLoaded', () => {
 hideOverlay(); // Teste sem o setTimeout
 });
 
-window.addEventListener('load');
+//window.addEventListener('load');
