@@ -25,10 +25,9 @@ lottieContainer.style.cssText = `
     transform: translate(-50%, -50%);
     background-color: #1a1f24;
 `;
-lottieContainer.style.display = 'none';
 
-document.body.appendChild(overlay);
-document.body.appendChild(lottieContainer);
+document.body.appendChild(lottieContainer); // Adiciona lottieContainer antes de overlay
+document.body.appendChild(overlay); // Adiciona overlay depois de lottieContainer
 
 function hideOverlay() {
     overlay.style.display = 'none';
@@ -44,7 +43,5 @@ function hideOverlay() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-hideOverlay(); // Teste sem o setTimeout
+    hideOverlay(); // Teste sem o setTimeout
 });
-
-//window.addEventListener('load');
