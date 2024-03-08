@@ -9,7 +9,7 @@ overlay.style.cssText = `
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(26, 31, 36, 1);
+    background-color: #1a1f24;
     z-index: 999;
 `;
 
@@ -23,6 +23,7 @@ lottieContainer.style.cssText = `
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #1a1f24;
 `;
 lottieContainer.style.display = 'none';
 
