@@ -16,8 +16,8 @@ overlay.style.cssText = `
 const lottieContainer = document.createElement('div');
 lottieContainer.id = 'lottieContainer';
 lottieContainer.style.cssText = `
-    max-width: 500px;
-    max-height: 500px;
+    max-width: 100%;
+    max-height: 100%;
     display: none;
     position: absolute;
     top: 50%;
@@ -42,8 +42,8 @@ function hideOverlay() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    hideOverlay(); // Teste sem o setTimeout
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//    hideOverlay(); // Teste sem o setTimeout
+//});
 
-window.addEventListener('load');
+window.addEventListener('load', hideOverlay);
