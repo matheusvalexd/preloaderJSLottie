@@ -39,7 +39,7 @@ lottieContainer.style.cssText = `
 
 // Adicione a animação Rive ao elemento lottieContainer
 const riveLoader = new Rive({
-    src: 'animacao.riv',
+    src: 'https://github.com/matheusvalexd/preloaderJSLottie/blob/main/space_exploration_animation.riv',
     autoplay: true,
 });
 lottieContainer.appendChild(riveLoader.canvas);
