@@ -9,7 +9,7 @@ overlay.style.cssText = `
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1a1f24;
+    background-color: #09090e;
     z-index: 999;
 `;
 
@@ -22,7 +22,7 @@ lottieContainerAntes.style.cssText = `
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #1a1f24;
+    background-color: #09090e;
 `;
 
 
@@ -51,10 +51,10 @@ function hideOverlay() {
     lottieContainer.style.display = 'block';
     // Substitua pela URL direta do seu arquivo JSON do Lottie.
     const r = new rive.Rive({
-    src: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/space_exploration_animation.riv',
+    src: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@4e1255c3edf4f7a7f284a2984460cf962e24d9bd/loading.riv',
     canvas: document.createElement('canvas'),
     autoplay: true,
-    stateMachines: 'Demo',
+    stateMachines: 'idlestate',
     onLoad: () => {
         r.resizeDrawingSurfaceToCanvas();
     },
