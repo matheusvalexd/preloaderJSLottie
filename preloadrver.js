@@ -53,6 +53,7 @@ function hideOverlay() {
 const riveLoader = new Rive({
     src: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/space_exploration_animation.riv',
     autoplay: true,
+    animations: 'Demo',
     loop: true,
 });
 lottieContainer.appendChild(riveLoader.canvas);
