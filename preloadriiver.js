@@ -52,11 +52,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Adicione a animação Rive ao elemento lottieContainer
-const riveLoader = new Rive({
+const r = new rive.Rive({
     src: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/space_exploration_animation.riv',
+    canvas: document.createElement('canvas'),
     autoplay: true,
-    animations: 'Demo',
-    loop: true,
+    stateMachines: 'Demo',
+    onLoad: () => {
+        r.resizeDrawingSurfaceToCanvas();
+    },
 });
-lottieContainer.appendChild(riveLoader.canvas);
-
+lottieContainer.appendChild(r.canvas);
