@@ -73,7 +73,7 @@ const canvas = r.canvas;
 lottieContainer.appendChild(canvas);
 }
 
-if (window.innerWidth > 718) {
+if (window.screen.width > 720) {
     document.addEventListener('DOMContentLoaded', () => {
         hideOverlay();
     });
