@@ -41,6 +41,8 @@ lottieContainer.style.cssText = `
 const riveLoader = new Rive({
     src: 'https://github.com/matheusvalexd/preloaderJSLottie/blob/main/space_exploration_animation.riv',
     autoplay: true,
+    artboard: 'Demo', // Nome da artboard que você deseja usar
+    loop: true, // Defina como verdadeiro para reprodução em loop
 });
 lottieContainer.appendChild(riveLoader.canvas);
 
