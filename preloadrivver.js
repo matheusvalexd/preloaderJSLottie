@@ -25,6 +25,7 @@ lottieContainerAntes.style.cssText = `
     background-color: #1a1f24;
 `;
 
+
 const lottieContainer = document.createElement('div');
 lottieContainer.id = 'lottieContainer';
 lottieContainer.style.cssText = `
@@ -37,16 +38,19 @@ lottieContainer.style.cssText = `
     transform: translate(-50%, -50%);
 `;
 
-document.body.appendChild(overlay);
-document.body.appendChild(lottieContainerAntes);
-document.body.appendChild(lottieContainer);
+
+document.body.appendChild(overlay); // Adiciona overlay depois de lottieContainer
+document.body.appendChild(lottieContainerAntes); // Adiciona lottieContainer antes de overlay
+document.body.appendChild(lottieContainer); // Adiciona lottieContainer antes de overlay
+
+
 
 function hideOverlay() {
     overlay.style.display = 'none';
     lottieContainerAntes.style.display = 'block';
     lottieContainer.style.display = 'block';
-    // Adicione a animação Rive ao elemento lottieContainer
-const r = new rive.Rive({
+    // Substitua pela URL direta do seu arquivo JSON do Lottie.
+    const r = new rive.Rive({
     src: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/space_exploration_animation.riv',
     canvas: document.createElement('canvas'),
     autoplay: true,
@@ -59,7 +63,9 @@ lottieContainer.appendChild(r.canvas);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    hideOverlay();
+   hideOverlay(); // Teste sem o setTimeout
 });
 
-
+//document.addEventListener('load', function() {
+  //    hideOverlay();
+ //   });
