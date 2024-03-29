@@ -9,7 +9,7 @@ overlay.style.cssText = `
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #1a1f24;
+    background-color: red;
     z-index: 999;
 `;
 
@@ -22,7 +22,7 @@ lottieContainerAntes.style.cssText = `
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #1a1f24;
+    background-color: red;
 `;
 
 const lottieContainer = document.createElement('div');
@@ -41,7 +41,7 @@ lottieContainer.style.cssText = `
 const riveLoader = new Rive({
     src: 'https://github.com/matheusvalexd/preloaderJSLottie/blob/main/space_exploration_animation.riv',
     autoplay: true,
-    artboard: 'Demo', // Nome da artboard que você deseja usar
+    animations: 'Demo', // Nome da artboard que você deseja usar
     loop: true, // Defina como verdadeiro para reprodução em loop
 });
 lottieContainer.appendChild(riveLoader.canvas);
