@@ -73,10 +73,14 @@ const canvas = r.canvas;
 lottieContainer.appendChild(canvas);
 }
 
-
-document.addEventListener('DOMContentLoaded', () => {
-   hideOverlay(); // Teste sem o setTimeout
-});
+if (window.innerWidth > 718) {
+    document.addEventListener('DOMContentLoaded', () => {
+        hideOverlay();
+    });
+}
+//document.addEventListener('DOMContentLoaded', () => {
+ //  hideOverlay(); // Teste sem o setTimeout
+//});
 
 //document.addEventListener('load', function() {
   //    hideOverlay();
