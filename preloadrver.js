@@ -47,7 +47,9 @@ function hideOverlay() {
     lottieContainer.style.display = 'block';
 }
 
-
+document.addEventListener('DOMContentLoaded', () => {
+    hideOverlay();
+});
 
 // Adicione a animação Rive ao elemento lottieContainer
 const riveLoader = new Rive({
@@ -58,6 +60,3 @@ const riveLoader = new Rive({
 });
 lottieContainer.appendChild(riveLoader.canvas);
 
-document.addEventListener('DOMContentLoaded', () => {
-    hideOverlay();
-});
