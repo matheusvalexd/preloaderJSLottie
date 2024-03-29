@@ -29,12 +29,13 @@ lottieContainerAntes.style.cssText = `
 const lottieContainer = document.createElement('div');
 lottieContainer.id = 'lottieContainer';
 lottieContainer.style.cssText = `
-    width: 100%; /* Ajuste a largura para 100% */
-    height: 100%; /* Ajuste a altura para 100% */
+    width: 100%;
+    height: 100%;
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 `;
 
 
@@ -51,15 +52,23 @@ function hideOverlay() {
     // Substitua pela URL direta do seu arquivo JSON do Lottie.
     const r = new rive.Rive({
     src: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/space_exploration_animation.riv',
-    canvas: lottieContainer, // Use lottieContainer como o canvas
+    canvas: document.createElement('canvas'),
     autoplay: true,
     stateMachines: 'Demo',
     onLoad: () => {
         r.resizeDrawingSurfaceToCanvas();
     },
 });
+const canvas = r.canvas;
+canvas.width = lottieContainer.offsetWidth;
+canvas.height = lottieContainer.offsetHeight;
+lottieContainer.appendChild(canvas);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
    hideOverlay(); // Teste sem o setTimeout
 });
+
+//document.addEventListener('load', function() {
+  //    hideOverlay();
+ //   });
