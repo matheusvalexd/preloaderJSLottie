@@ -45,13 +45,7 @@ function hideOverlay() {
     overlay.style.display = 'none';
     lottieContainerAntes.style.display = 'block';
     lottieContainer.style.display = 'block';
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    hideOverlay();
-});
-
-// Adicione a animação Rive ao elemento lottieContainer
+    // Adicione a animação Rive ao elemento lottieContainer
 const r = new rive.Rive({
     src: 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/space_exploration_animation.riv',
     canvas: document.createElement('canvas'),
@@ -62,3 +56,10 @@ const r = new rive.Rive({
     },
 });
 lottieContainer.appendChild(r.canvas);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    hideOverlay();
+});
+
+
