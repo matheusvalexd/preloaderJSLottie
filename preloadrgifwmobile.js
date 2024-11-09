@@ -70,7 +70,7 @@ function hideOverlay() {
     } else {
         // Usar GIF para dispositivos móveis
         const gif = document.createElement('img');
-        gif.src = 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@274039538211321a7f7b425cdd3c7d6da0d533a8/flowcodesplash.gif'; // Substitua pela URL do seu GIF
+        gif.src = 'https://cdn.jsdelivr.net/gh/matheusvalexd/preloaderJSLottie@main/flowcodesplashwhite.gif'; // Substitua pela URL do seu GIF
         gif.style.cssText = `
             width: 100%;
             height: 100%;
